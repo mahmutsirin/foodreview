@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Roboto+Condensed:ital@1&display=swap');
+
+:root{
+    --main-color:#F4E6D1;
+    --black-color: #0e0e0e;
+    --main2-color:#EB6406;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /*Yazıyı bir büyük bir küçük yazar*/
+    
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--main-color);
+}
+section{
+    padding-left: 10rem ;
+    /*İçerik paylaşım sayfasında işime yarıyor*/
+    padding-right: 10rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    /*Üst kısmındaki yazı ile arasını açmamı sağladı*/
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--black-color);
+}
+.btn:hover{
+    opacity: 0.7;
+}
+
+.heading{
+    /*Review ve About sayfalarında ki başlıklar*/
+    color:var(--black-color);
+    /*Bütün yazıları büyük yazar*/
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #EB6406;
+}
+
+.heading span{
+    color:rgb(113, 86, 86);
+    text-transform: uppercase;
+}
+
+/* header start */
+header .logo img{
+    height: 10rem;
+}
+header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgb(0,0,0,0.75);
+    /*Benim aşağı inmem ile benimle geliyor*/
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .navbar a{
+    margin:0.2rem 1rem;
+    font-size: 1.6rem;
+    color:var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+header .navbar .active,
+header .navbar a:hover{
+    border-color:#EB6406;
+    padding-bottom: 0.5rem;    
+}
+header .buttons button{
+    /*imleci tıklama efekti yapar*/
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+header .buttons a{
+    margin:0 1rem;
+    font-size: 2rem;
+    color:var(--black-color); 
+    border-bottom: 0.1rem solid transparent;
+}
+
+header .buttons  a:hover{
+    border-color:#EB6406;
+    padding-bottom: 0.1rem;    
+}
+header .buttons a:active {
+    color: #EB6406;
+}
+
+/* Çıkış butonundaki ikonun soluna boşluk verir */
+header .buttons i .fa-sign-out-alt {
+    margin-left: 10px; 
+}
+
+/* İsim ile Çıkış linki arasını açar */
+header .buttons button i a {
+    margin-left: 20px; /* Bu değeri artırarak mesafeyi ayarlayabilirsin */
+    display: inline-block;
+}
+
+.box img, .content-card img {
+    width: 100%;           /* Genişlik kartın tamamını kaplasın */
+    height: 25rem;         /* Buraya istediğin sabit yüksekliği yaz (örn: 250px) */
+    object-fit: cover;     /* KİLİT NOKTA: Resmi bozmadan alanı doldurur, fazlalığı kırpar */
+    object-position: center; /* Resmin tam ortasını odak noktası yapar */
+    border-radius: 1rem;   /* Resimlerin köşelerini yumuşatır */
+    display: block;
+}
+/* Header Navbar Düzenlemesi */
+header .navbar {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Arama Kutusu Tasarımı */
+header .navbar .search-form form {
+    display: flex;
+    align-items: center;
+    background: #ffffff; 
+    border-radius: 2.5rem; /* Oval yapı */
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #ddd;
+}
+
+header .navbar .search-form input {
+    width: 9rem; /* Genişlik */
+    background: none;
+    font-size: 1.4rem;
+    text-transform: none; /* Küçük harf sorunu olmaması için */
+    color: #333;
+}
+
+header .navbar .search-form button {
+    background: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: #666;
+    transition: 0.3s;
+}
+
+header .navbar .search-form button:hover {
+    color: var(--main2-color); /* Turuncuya döner */
+}
+/* header end*/
+
+/* home start */
+.home{
+    /*resmimi tüm sayfayı kaplattım*/
+    min-height: 100vh;
+    background: url(../images/pexels-helena-lopes-693267.jpg) no-repeat;
+    /*Resmimi tüm sayfaya yayar*/
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+
+}
+.home .content{
+    max-width: 60rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    color:#0e0e0e
+}
+.home .content p {
+    /* Yazı Tipi ve Boyutu */
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem; /* Biraz büyüttük */
+    
+    /* Belirginlik (Silik durmaması için) */
+    color: #000000;    /* Tam siyah yaparak kontrastı artırdık */
+    font-weight: 500;  /* 300 çok incedir, 500 veya 600 daha toktur */
+    
+    /* Türkçe Karakter ve Büyük İ Sorunu Çözümü */
+    text-transform: none; /* 'capitalize' her harfi büyük yapıp İ'leri bozabilir */
+    
+    /* Okunabilirlik */
+    line-height: 1.6;
+    padding: 1.5rem 0;
+    width: 100%;
+}
+
+
+/* home end */
+
+/* hakkimda start */
+.about .row{
+    display: flex;
+}
+
+.about .row img{
+    width: 73%;
+    border-radius: 50rem;
+
+    
+}
+.about .row .content{
+    flex: 1 1 45rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #873b05;
+}
+.about .row .content p{
+    font-size: 1.6rem;
+    color: rgb(77, 76, 76);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+/* hakkimda end */
+
+/* yorumlar start */
+/* Ana kart yapısı (Her şeyi kapsayan tek kutu) */
+.content-card {
+    background-color: #fff;
+    width: 95%;
+    max-width: 85rem; /* Genişliği buradan ayarlayabilirsin */
+    margin: 3rem auto;
+    padding: 4rem;
+    border-radius: 4rem; /* Köşeleri yuvarlatılmış modern görünüm */
+    
+    /* GÖLGE VE ÇERÇEVE */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.12); 
+    border: 1px solid #eee;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; 
+}
+
+/* Yemek Başlığı */
+.content-card h2 {
+    font-size: 2.8rem;
+    color: var(--black-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Resim Alanı */
+
+
+
+/* Mekan ve Adres Bilgileri */
+.content-card .details p {
+    font-size: 1.6rem;
+    color: #101010;
+    margin: 0.5rem 0;
+}
+
+
+/* Alt Kısım (Paylaşan ve Buton) */
+.content-card .footer-area {
+    width: 100%;
+    border-top: 1px solid #f0f0f0; /* Hafif bir ayırıcı çizgi */
+    padding-top: 2rem;
+}
+
+.content-card .footer-area h3 {
+    font-size: 1.8rem;
+    color: var(--main2-color);
+    margin-bottom: 1.5rem;
+}
+
+
+.txt{
+    margin:2rem 0;
+    border-radius: 1rem ;
+    text-transform: none;
+}
+
+.btnn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    font-size: 1.7rem;
+    background-color:rgb(248, 134, 134);
+    border-radius: 3rem;
+    /* imleci tıklanabilir hale getirme */
+    cursor: pointer;
+}
+.btnn:hover{
+    /*Tuşun içeri küçülmesi*/
+    transform: scale(0.96);
+    background-color:rgb(202, 30, 30);
+    color: #fff;
+}
+
+
+textarea{
+
+    width: 100%;
+    height: 15rem;
+    padding: 1.2rem 2rem;
+    box-sizing: border-box;
+    border: 0.2rem solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    
+}
+section .box-container .box a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:var(--black-color);
+    
+}
+
+section .box-container .box a:hover{
+    border-color:#EB6406;
+    padding-bottom: 0.5rem;    
+}
+
+
+
+
+ /* yorumlar end */

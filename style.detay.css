@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Roboto+Condensed:ital@1&display=swap');
+
+:root{
+    --main-color:#F4E6D1;
+    --black-color: #0e0e0e;
+    --main2-color:#EB6406;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /*Tıklanan şeyler tak diye gelmez*/
+    transition: 0.2s ease;
+}
+
+html{
+    font-size: 62.5%;
+    /*Site sayfasının sağa sola gitmesine mani olur*/
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--main-color);
+}
+section{
+    padding: 3.5rem 7%;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--black-color);
+}
+.btn:hover{
+    opacity: 0.7;
+}
+
+.heading{
+    color:var(--black-color);
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #EB6406;
+}
+.heading span{
+    color:rgb(113, 86, 86);
+    text-transform: uppercase;
+}
+
+/* header start */
+header .logo img{
+    height: 10rem;
+}
+header{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgb(0,0,0,0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+header .navbar .active,
+header .navbar a:hover{
+    border-color:#EB6406;
+    padding-bottom: 0.5rem;    
+}
+header .buttons button{
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+/* header end*/
+
+
+
+ /* yorumlar start */
+ 
+
+.review .box-container .box{
+     background-color: #fff;
+    width: 95%;
+    max-width: 85rem; /* Genişliği buradan ayarlayabilirsin */
+    margin: 3rem auto;
+    padding: 4rem;
+    border-radius: 4rem; /* Köşeleri yuvarlatılmış modern görünüm */
+    
+    /* GÖLGE VE ÇERÇEVE */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.12); 
+    border: 1px solid #eee;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; 
+    position: relative;
+}
+/* Detay sayfasındaki yemek başlığı ayarları */
+.review .box-container .box h2 {
+    font-size: 2.8rem;
+    color: var(--black-color);
+    margin-bottom: 0.5rem;
+    text-transform: capitalize; /* Baş harfleri büyük yapar, görsel estetik sağlar */
+}
+/* Detay sayfasındaki ana yemek resmi ayarları */
+/* Detay sayfasındaki resim için istediğin ayarlar */
+.review .box-container .box img {
+    width: 70%;            /* İstediğin genişlik oranı */
+    max-width: 80rem;      /* Görseldeki gibi geniş durması için sınırı artırdık */
+    height: 35rem;         /* İstediğin yükseklik ayarı */
+    
+    object-fit: cover;     /* Resmin oranını bozmadan kutuyu doldurur */
+    border-radius: 2.5rem; /* Yuvarlatılmış köşeler */
+    margin-bottom: 2.5rem; /* Alt boşluk */
+
+    /* Mevcut dosyadaki kısıtlamaları geçersiz kılmak için */
+    max-width: none !important; 
+    max-height: none !important;
+    display: block;
+    
+}
+.review .box-container .box .comment-text {
+    text-align: justify;    /* Metni sağa ve sola dayalı yapar */
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #444;
+    
+    /* Metnin kutu içinde çok yayılmasını önlemek için */
+    max-width: 70rem; 
+    margin: 2rem auto;      /* Kutuyu ortalar */
+    padding: 0 2.5rem;      /* Kenarlardan iç boşluk bırakır */
+    
+    word-break: break-word; /* Uzun kelimelerin kutuyu bozmasını engeller */
+}
+.review .box-container .box p{
+ /*Browser destekleri için ilaveten kullanıyoruz */
+    word-break: break-word;
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 2rem 0;
+}
+
+
+.txt{
+    margin:2rem 0;
+    border-radius: 1rem ;
+    text-transform: none;
+}
+
+.btnn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    font-size: 1.7rem;
+    background-color:rgb(248, 134, 134);
+    border-radius: 3rem;
+    /* imleci tıklanabilir hale getirme */
+    cursor: pointer;
+}
+.btnn:hover{
+    /*Tuşun içeri küçülmesi*/
+    transform: scale(0.96);
+    background-color:rgb(202, 30, 30);
+    color: #fff;
+}
+
+.review .yorum {
+    width: 50rem;            /* Genişliği kutuya tam yayar */
+    height: 15rem;          /* İstediğin yükseklik */
+    padding: 1.5rem;        /* İç boşluk */
+    font-size: 1.6rem;      /* Yazı boyutu */
+    font-family: 'Poppins', sans-serif;
+    border: 0.2rem solid #ddd;
+    border-radius: 1.5rem;  /* Resimlerindeki gibi yuvarlak köşeler */
+    background-color: #f9f9f9;
+    resize: none;           /* Kullanıcının kutuyu manuel büyütmesini engeller (tasarımı bozmaz) */
+    outline: none;          /* Tıklandığında çıkan varsayılan mavi çerçeveyi kaldırır */
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+}
+
+/* Tıklandığında (Odaklandığında) stil değişimi */
+.review .yorum:focus {
+    border-color: var(--main2-color); /* Turuncu rengin (EB6406) aktif olması için */
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+}
+section .box-container .box a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:var(--black-color);
+    
+}
+
+section .box-container .box a:hover{
+    border-color:#EB6406;
+    padding-bottom: 0.5rem;    
+}
+
+header .buttons a{
+    margin:0 1rem;
+    font-size: 2rem;
+    color:var(--black-color); 
+    border-bottom: 0.1rem solid transparent;
+}
+
+header .buttons  a:hover{
+    border-color:#EB6406;
+    padding-bottom: 0.1rem;    
+}
+header .buttons a:active {
+    color: #EB6406;
+}
+
+ /* yorumlar end */
+
+label{
+    font-size: 2rem;
+    display: flex;
+    
+    text-align: left;
+    
+}
+/* Tüm yorumların toplandığı alan */
+.comments-display {
+    width: 100%;
+    max-width: 50rem; /* Resim genişliği ile uyumlu yaptık */
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Kutular arası boşluk */
+}
+
+/* Her bir yorumun ayrı kutusu */
+.comment-box {
+    background: #ffffff;
+    border: 0.1rem solid #eee;
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.05);
+    text-align: left; /* Metinleri sola yasladık */
+    transition: transform 0.3s ease;
+}
+
+.comment-box:hover {
+    transform: translateY(-0.5rem); /* Üzerine gelince hafif kalkma efekti */
+}
+
+/* Yorum Başlığı (İsim ve Tarih) */
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border-bottom: 0.1rem solid #f1f1f1;
+    padding-bottom: 1rem;
+}
+
+.comment-header i {
+    font-size: 2.5rem;
+    color: var(--main2-color);
+    margin-right: 1.5rem;
+}
+
+.comment-header strong {
+    font-size: 1.6rem;
+    color: var(--black-color);
+    flex-grow: 1;
+}
+
+.comment-date {
+    font-size: 1.2rem;
+    color: #999;
+}
+
+
+
+/* Beğeni Sayısı Kutusu */
+/* Beğeni Alanı Genel Kapsayıcı */
+.like-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    pointer-events: auto !important; /* Tıklamayı garanti eder */
+}
+
+/* Beğeni Butonu - Senin istediğin o eski tasarımın gelişmiş hali */
+.like-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    background: #fff5f5; /* Çok hafif arka plan */
+    padding: 0.8rem 2.5rem;
+    border-radius: 5rem;
+    border: 0.1rem solid #ffeaea;
+    cursor: pointer !important; /* El işaretinin çıkması için kritik */
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Hover (Üzerine Gelince) Efekti */
+.like-button:hover {
+    background: #ffeaea;
+    transform: translateY(-2px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+}
+
+/* Tıklayınca Hafif Çökme Efekti */
+.like-button:active {
+    transform: scale(0.95);
+}
+
+/* Buton İçindeki Kalp İkonu */
+.like-button i {
+    font-size: 2rem;
+    color: #ff4757;
+    animation: heartBeat 1.5s infinite; /* Kalp atışı animasyonu */
+}
+
+/* Buton İçindeki Yazı */
+.like-button span {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+/* Kalp Atışı Animasyonu (Bunu koruyoruz) */
+@keyframes heartBeat {
+    0% { transform: scale(1); }
+    15% { transform: scale(1.2); }
+    30% { transform: scale(1); }
+}
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* İkisini iki uca yaslar */
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+/* Geri Dön Linki Stili */
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    background-color: #f8f9fa;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5rem;
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Yazının kırılmasını önler */
+}
+
+.back-link i {
+    color: #ff4757; /* Tema rengin */
+    font-size: 1.6rem;
+}
+
+/* Üzerine gelince efekt */
+.back-link:hover {
+    background-color: #ff4757;
+    color: #fff;
+    border-color: #ff4757;
+    transform: translateX(-3px);
+}
+
+.back-link:hover i {
+    color: #fff;
+}
+
+/* Yemek Adı Stili */
+.food-title {
+    margin: 0 !important; /* H2'nin varsayılan boşluğunu sıfırlar */
+    flex-grow: 1;
+    text-align: right; /* Yemek adını sağa yaslar */
+    font-size: 2.4rem;
+    color: #2f3542;
+}
+
+/* Mobilde (Küçük ekranlarda) düzgün durması için */
+@media (max-width: 450px) {
+    .title-container {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .food-title {
+        text-align: left;
+    }
+}
+.title-container {
+    display: flex;
+    align-items: center; /* Dikeyde ortalar */
+    justify-content: space-between; /* Parçaları yayar */
+    margin-bottom: 2.5rem;
+    padding: 1rem 0;
+}
+
+/* Her bir parça için ortak ayar */
+.title-item {
+    flex: 1; /* Sol, orta ve sağ alanların eşit yer kaplamasını sağlar */
+    display: flex;
+}
+
+/* Orta kısmı kendi içinde merkezle */
+.title-item.center {
+    justify-content: center;
+    flex: 2; /* İsim uzunsa daha fazla alan tanır */
+}
+
+/* Sağ taraf boş kalacak ama solla aynı genişlikte duracak */
+.title-item.right {
+    justify-content: flex-end;
+}
+
+/* Geri Dön Butonu Tasarımı */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    background-color: #f8f9fa;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5rem;
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: 500;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.back-link i {
+    color: #ff4757; /* Kalp rengin */
+    font-size: 1.6rem;
+}
+
+.back-link:hover {
+    background-color: #ff4757;
+    color: #fff;
+    transform: translateX(-3px);
+}
+
+.back-link:hover i {
+    color: #fff;
+}
+
+/* Yemek Başlığı Tasarımı */
+.food-title {
+    margin: 0 !important;
+    font-size: 2.6rem;
+    color: #2d3436;
+    text-align: center;
+    white-space: nowrap; /* İsmin aşağı kaymasını önler */
+}
+
+/* Ekran küçüldüğünde yazıların birbirine girmemesi için */
+@media (max-width: 600px) {
+    .food-title {
+        font-size: 1.8rem;
+    }
+    .back-link span {
+        display: none; /* Mobilde sadece ikon kalsın */
+    }
+}
