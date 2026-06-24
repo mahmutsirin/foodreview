@@ -42,5 +42,9 @@ Bu proje kapsamında:
 konularında deneyim kazanılmıştır.
 
 ## Ekran Görüntüleri
-<img width="1831" height="898" alt="detay" src="https://github.com/user-attachments/assets/911f58eb-9abd-461f-b5af-e934875f74d2" />
+<img width="1882" height="907" alt="index" src="https://github.com/user-attachments/assets/5c4ec077-eab8-47b1-ac66-ee7d6e7ca7ad" />
+<img width="1872" height="894" alt="giris" src="https://github.com/user-attachments/assets/e854a955-dec5-4543-b054-8b36840d1931" />
+<img width="1863" height="904" alt="dosyayukle" src="https://github.com/user-attachments/assets/d624d4b6-9297-4419-9f36-e0970f1c52db" />
+<img width="1847" height="901" alt="review" src="https://github.com/user-attachments/assets/37972d1b-9643-46d5-a73e-45549baca077" />
+<img width="1831" height="898" alt="detay" src="https://github.com/user-attachments/assets/a06d4e0b-bc59-4460-b861-67dfd299c38d" />
 
