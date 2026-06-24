@@ -15,7 +15,7 @@ Bu proje, kullanıcıların restoranları değil doğrudan yemekleri değerlendi
 ---
 
 ### Dosya Yükleme
-[![dosyayukle](https://github.com/user-attachments/assets/d624d4b2-9297-4419-9f36-e0970f1c52db)](https://github.com/user-attachments/assets/d624d4b2-9297-4419-9f36-e0970f1c52db)
+[![dosyayukle](https://github.com/user-attachments/assets/506c89cf-ae03-4244-8655-cff37eeb60c1)](https://github.com/user-attachments/assets/506c89cf-ae03-4244-8655-cff37eeb60c1)
 
 ---
 
@@ -65,6 +65,5 @@ Bu proje kapsamında:
 * Git ve GitHub kullanımı
 
 konularında deneyim kazanılmıştır.
-<img width="1831" height="898" alt="detay" src="https://github.com/user-attachments/assets/4e540a85-85d8-47ad-af3d-51f77b8c45a6" />
 
 
