@@ -48,3 +48,9 @@ konularında deneyim kazanılmıştır.
 <img width="1847" height="901" alt="review" src="https://github.com/user-attachments/assets/37972d1b-9643-46d5-a73e-45549baca077" />
 <img width="1831" height="898" alt="detay" src="https://github.com/user-attachments/assets/a06d4e0b-bc59-4460-b861-67dfd299c38d" />
 
+[![index](https://github.com/user-attachments/assets/5c4ec077-eab8-47b1-ac66-ee7d6e7ca7ad)](https://github.com/user-attachments/assets/5c4ec077-eab8-47b1-ac66-ee7d6e7ca7ad)
+
+[![giris](https://github.com/user-attachments/assets/e854a955-dec5-4543-b054-8b36840d1931)](https://github.com/user-attachments/assets/e854a955-dec5-4543-b054-8b36840d1931)
+
+[![dosya](https://github.com/user-attachments/assets/d624d4b2-9297-4419-9f36-e0970f1c52db)](https://github.com/user-attachments/assets/d624d4b2-9297-4419-9f36-e0970f1c52db)
+
