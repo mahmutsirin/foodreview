@@ -41,6 +41,6 @@ Bu proje kapsamında:
 
 konularında deneyim kazanılmıştır.
 
-## Not
+## Ekran Görüntüleri
+<img width="1831" height="898" alt="detay" src="https://github.com/user-attachments/assets/911f58eb-9abd-461f-b5af-e934875f74d2" />
 
-Bu proje üniversite kapsamında geliştirilmiş bir eğitim ve portfolyo projesidir.
